@@ -18,7 +18,7 @@
   <ImageExample />
 -->
   <IntersectionObserverSectionCard />
-<jsonchart></jsonchart>
+  <LeftAlignedExample />
   <IntersectionObserverSectionCard />
 
   <!-- <InteresectionObserverBasicExample />
