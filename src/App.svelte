@@ -19,7 +19,7 @@
 -->
   <IntersectionObserverSectionCard />
   <LeftAlignedExample />
-  <IntersectionObserverSectionCard />
+ <InteresectionObserverBasicExample />
 
   <!-- <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
