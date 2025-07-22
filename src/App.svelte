@@ -13,12 +13,12 @@
 <main>
   <TitleSection />
   <RightAlignedExample />
-  <LeftAlignedExample />
+  <!-- <LeftAlignedExample />
   <ImageExample />
 
   <IntersectionObserverSectionCard />
   <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
-  <IntersectionObserverListExample />
+  <IntersectionObserverListExample /> -->
 </main>
