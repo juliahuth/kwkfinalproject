@@ -8,6 +8,7 @@
   import DisappearingDuckExample from "./sections/DisappearingDuckExample.svelte";
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
+  import Jsonchart from "./sections/Jsonchart.svelte";
 </script>
 
 <main>
@@ -17,6 +18,9 @@
   <ImageExample />
 -->
   <IntersectionObserverSectionCard />
+<jsonchart></jsonchart>
+  <IntersectionObserverSectionCard />
+
   <!-- <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
