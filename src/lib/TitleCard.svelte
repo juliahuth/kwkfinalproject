@@ -11,7 +11,7 @@
 
 <style>
     .title-card {
-        background-color: #007052;
+        background-color: #0a1a40; /* deep navy */
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -19,29 +19,30 @@
         text-align: center;
         padding: 2rem;
         box-sizing: border-box;
-        font-family: "Inter", sans-serif;
+        font-family: 'Impact', 'Segoe UI', sans-serif; /* bold, impactful */
     }
 
     .content {
         max-width: 700px;
-        background-color: #034c36;
-        padding: 2rem;
-        border: 6px solid #e3ff00;
-        border-radius: 2rem;
-        box-shadow: 16px 16px #188f70;
+        background-color: white;
+        padding: 2rem 2.5rem;
+        border: 4px solid #f8dce0; /* pale pink */
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
     h1 {
         font-size: 3rem;
         margin: 0;
-        color: #e3ff00;
-        text-shadow: 1px 1px 0 #007052;
+        color: #0a1a40; /* navy */
+        letter-spacing: 1px;
     }
 
     p {
         font-size: 1.3rem;
-        color: #f7f5eb;
+        color: #444;
         margin-top: 1rem;
+        font-family: 'Georgia', serif; /* adds class */
     }
 
     @media (max-width: 600px) {

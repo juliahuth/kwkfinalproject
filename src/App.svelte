@@ -15,10 +15,10 @@
   <RightAlignedExample />
   <!-- <LeftAlignedExample />
   <ImageExample />
-
+-->
   <IntersectionObserverSectionCard />
-  <InteresectionObserverBasicExample />
+  <!-- <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
-  <IntersectionObserverListExample /> -->
+  <IntersectionObserverListExample />  -->
 </main>

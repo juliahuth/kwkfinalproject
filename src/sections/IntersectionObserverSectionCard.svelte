@@ -2,10 +2,9 @@
     import TitleCard from "../lib/TitleCard.svelte";
 
     const title =
-        "The following examples show the use of the Intersection Observer API";
+        "Organizations like BWDC equip society with necessary tools to understand systems";
     const subtitle =
-        "Be sure to read through the text on this page and also " +
-        "poke around in the code to fully understand how they work!";
+        "BWDC is giving programmers like us the data we need to better understand the world around us and how we can make a difference, even if its behind a computer.";
 </script>
 
 <TitleCard {title} {subtitle} />

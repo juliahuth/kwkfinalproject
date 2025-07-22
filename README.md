@@ -20,3 +20,7 @@ Run `npm install` and then `npm run dev` to spin up the project locally. Then, s
 
 ## Credit
 Repo created using vite (`npm create vite@6`)
+
+
+SOURCES USED IN FINAL PROJECT:
+

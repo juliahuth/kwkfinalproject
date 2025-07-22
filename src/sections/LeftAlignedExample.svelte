@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import * as Highcharts from "highcharts";
     import "highcharts/modules/exporting";
     import { Chart } from "@highcharts/svelte";
@@ -71,7 +71,7 @@
     }
 </script>
 
-<div>
+<!-- <div>
     <Scroller layout="left">
         {#snippet sticky()}
             <div class="chart">
@@ -124,8 +124,8 @@
             </ArticleText>
         {/snippet}
     </Scroller>
-</div>
-
+</div> -->
+<!-- 
 <style>
     .chart {
         width: 90%;
@@ -149,4 +149,4 @@
         transform: translateY(2px);
         box-shadow: 0 2px 0 #007052;
     }
-</style>
+</style> --> -->
