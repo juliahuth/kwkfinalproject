@@ -72,10 +72,10 @@
 <div>
     <Scroller layout="right">
         {#snippet sticky()}
-            <div class="chart">
-                <Chart {options} highcharts={Highcharts} />
-            </div>
-            <p>
+
+        <h1>We know there are problems in the education system, but what does the data say?</h1>
+          
+            <!-- <p>
                 Here's an example chart using
                 <a href="https://www.highcharts.com/">Highcharts</a>!
             </p>
@@ -101,45 +101,35 @@
                     >API reference</a
                 >
                 to understand what each element in the <code>options</code> object
-                does.
-            </p>
+                does. -->
+            <!-- </p> -->
         {/snippet}
 
         {#snippet scrolly()}
             <ArticleText>
-                <strong>Welcome to the KWK Data Scrollytelling Template!</strong
+                <strong>Is education in the United States really fair?!</strong
                 >
             </ArticleText>
 
             <ArticleText>
-                This is a <strong>basic example</strong> of how you might create
-                a scrollytelling piece using Svelte and Highcharts.
+               <strong>Inequality starts early. </strong> Access to early childhood education varies greatly across socio-economic groups and especially affects students of color. Children in underresourced schools often start behind and remain behind.
             </ArticleText>
 
             <ArticleText>
-                You can use this template as a <strong>starting point</strong>
-                for your project.
+                <strong>Resources Shape Outcomes</strong>
                 <br /><br />
-                Or, if you want to build something from scratch, you can use it as
-                a <strong>reference</strong> for specific functionality.
+                    Schools in affluent and less diverse areas often have newer facilities, better technology, and more extracurricular opportunities than schools in underserved communities.
+
             </ArticleText>
 
             <ArticleText>
-                This is <strong>just one way</strong> that scrollytelling can
-                look.
+                 <strong>Quality education depends on quality teachers.</strong> 
                 <br /><br />
-                <strong>
-                    If you use this template, be sure to modify it and make it
-                    your own!
-                </strong>
+               
+Underfunded schools across the country struggle to attract and retain experienced educators.              
             </ArticleText>
         {/snippet}
     </Scroller>
 </div>
 
-<style>
-    .chart {
-        width: 90%;
-        margin: 0px auto;
-    }
-</style>
+
