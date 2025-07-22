@@ -1,53 +1,51 @@
 <script>
-    import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
 
-    let { children, callback, options } = $props();
+  let { children, callback, options } = $props();
+  let uniqueId = `article-${crypto.randomUUID()}`;
+  let observer;
 
-    // Unique ID to target this element
-    let uniqueId = Math.random().toString();
+  onMount(() => {
+    const observedElement = document.getElementById(uniqueId);
+    observer = new IntersectionObserver(callback, options);
+    if (observedElement) observer.observe(observedElement);
+  });
 
-    onMount(() => {
-        let intersectionObserver = new IntersectionObserver(callback, options);
-        const observedElement = document.getElementById(uniqueId);
-        intersectionObserver.observe(observedElement);
-    });
+  onDestroy(() => {
+    observer?.disconnect();
+  });
 </script>
 
-<!-- assign the containing div the id `uniqueId` so we can target it -->
 <div id={uniqueId} class="article-text">
-    <p>
-        {@render children()}
-    </p>
+  <p>{@render children()}</p>
 </div>
 
 <style>
+  .article-text {
+    margin: 40vh auto;
+    width: 60%;
+    background-color: #f0f4ff; /* soft blue-tinted background */
+    color: #08122e; /* darker navy text */
+    border: 3px solid #0a1a40; /* strong navy border */
+    border-radius: 1rem;
+    padding: 1.75rem 2rem;
+    box-shadow: 0 6px 20px rgba(10, 26, 64, 0.2);
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
     .article-text {
-        margin: 50vh auto;
-        width: 60%;
-        background-color: #ffffff; /* white background */
-        color: #0a1a40; /* navy text */
-        border: 3px solid #f8dce0; /* pale pink accent */
-        border-radius: 1rem;
-        padding: 2rem;
-        box-shadow: 0 8px 24px rgba(10, 26, 64, 0.15); /* subtle navy shadow */
-        font-family: 'Georgia', serif;
-        line-height: 1.6;
-        text-align: left;
+      width: 90%;
+      padding: 1.25rem 1.5rem;
+      font-size: 1rem;
     }
-
-    p {
-        margin: 0;
-        font-size: 1.2rem;
-    }
-
-    @media (max-width: 768px) {
-        .article-text {
-            width: 90%;
-            padding: 1.5rem;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-    }
+  }
 </style>
